@@ -3,7 +3,7 @@
  * Created by shelbysturgis on 1/23/14.
  */
 
-define(['scripts/d3.v3', 'scripts/elasticsearch'], function (d3, elasticsearch) {
+define(['scripts/d3', 'scripts/elasticsearch'], function (d3, elasticsearch) {
 
     "use strict";
     var client = new elasticsearch.Client();

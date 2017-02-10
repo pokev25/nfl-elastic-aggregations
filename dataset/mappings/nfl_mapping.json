@@ -1,12 +1,5 @@
 {
     "2013" : {
-        "_index" : {
-            "enabled" : true
-        },
-        "_id" : {
-            "index" : "not_analyzed",
-            "store" : "yes"
-        },
         "properties" : {
             "gameid" : {
                 "type" : "string",
@@ -59,8 +52,12 @@
                 "store" : "yes"
             },
             "description" : {
-                "type" : "string",
-                "store" : "yes"
+                "type" : "text",
+                "fields": {
+                "keyword": { 
+                  "type": "keyword"
+                  }
+                }
             },
             "scorechange" : {
                 "type" : "short",
